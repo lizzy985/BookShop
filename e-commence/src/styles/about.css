@@ -1,0 +1,53 @@
+/* about.css */
+
+/* About Page */
+.about {
+    padding: 20px;
+    background-color: #f8f9fa; /* 浅色背景 */
+    color: #333; /* 深色文字 */
+  }
+  
+  .about-header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .about-header h1 {
+    font-size: 2rem;
+    color: #282c34; /* 深色标题 */
+  }
+  
+  .about-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .about-content h2 {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    border-bottom: 2px solid #61dafb; /* 蓝色底边 */
+    padding-bottom: 5px;
+  }
+  
+  .about-content p {
+    line-height: 1.6;
+  }
+  
+  .about-content ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  
+  .about-content ul li {
+    margin-bottom: 10px;
+  }
+  
+  .about-content a {
+    color: #61dafb; /* 蓝色链接文字 */
+    text-decoration: none;
+  }
+  
+  .about-content a:hover {
+    text-decoration: underline; /* 悬停时下划线 */
+  }
+  

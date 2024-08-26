@@ -1,0 +1,38 @@
+/* footer.css */
+
+/* Footer */
+.footer {
+    display: flex;
+    flex-direction: column; /* 垂直方向上的布局 */
+    align-items: center; /* 水平方向上居中对齐 */
+    padding: 20px;
+    background-color: #282c34; /* 深色背景，与 Header 一致 */
+    color: #ffffff; /* 白色文字 */
+    border-top: 2px solid #61dafb; /* 细蓝色上边框 */
+    font-size: 0.9rem; /* 较小的字体 */
+  }
+  
+  /* Footer p */
+  .footer p {
+    margin: 10px 0;
+    text-align: center;
+  }
+  
+  /* Footer a */
+  .footer a {
+    color: #61dafb; /* 蓝色链接文字 */
+    text-decoration: none;
+    transition: color 0.3s; /* 平滑过渡效果 */
+  }
+  
+  .footer a:hover {
+    color: #ffffff; /* 悬停时文字颜色 */
+  }
+  
+  /* Footer nav */
+  .footer nav {
+    display: flex;
+    gap: 15px; /* 链接之间的间距 */
+    margin: 10px 0; /* 增加上下间距 */
+  }
+  

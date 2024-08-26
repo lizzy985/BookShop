@@ -1,0 +1,96 @@
+/*
+.header {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 10px;
+    background-color: #f8f9fa;
+  }
+
+  .header h1 {
+  margin: 0;
+  text-align: center; 
+  width: 100%; 
+}
+  
+
+  .header nav {
+    display: flex;
+    gap: 15px; 
+  }
+  
+  
+  .cart {
+    display: flex;
+    align-items: center; 
+    cursor: pointer;
+  }
+  
+
+  .cart img {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+  }   
+ */
+
+/* header.css */
+
+/* Header */
+.header {
+    display: flex;
+    flex-direction: column; /* 垂直方向上的布局 */
+    align-items: center; /* 水平方向上居中对齐 */
+    padding: 20px;
+    background-color: #282c34; /* 深色背景 */
+    color: #ffffff; /* 白色文字 */
+    border-bottom: 2px solid #61dafb; /* 细蓝色底边 */
+  }
+  
+  /* Header h1 */
+  .header h1 {
+    margin: 0;
+    font-size: 2rem; /* 更大的标题字体 */
+    text-align: center;
+    color: #61dafb; /* 蓝色文字 */
+    margin-bottom: 20px; /* 标题和导航之间的间距 */
+  }
+  
+  /* Header nav */
+  .header nav {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* 链接之间的间距 */
+  }
+  
+  /* Header nav a */
+  .header nav a {
+    text-decoration: none;
+    color: #ffffff; /* 白色链接文字 */
+    font-size: 1rem; /* 合适的字体大小 */
+    padding: 10px 15px; /* 增加点击区域 */
+    border-radius: 5px; /* 圆角边框 */
+    transition: background-color 0.3s, color 0.3s; /* 平滑过渡效果 */
+  }
+  
+  .header nav a:hover {
+    background-color: #61dafb; /* 悬停时背景色 */
+    color: #282c34; /* 悬停时文字颜色 */
+  }
+  
+  /* Cart */
+  .cart {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  /* Cart img */
+  .cart img {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+  }
+  
+  
+  

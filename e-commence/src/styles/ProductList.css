@@ -1,0 +1,74 @@
+/* productlist.css */
+
+/* Container for the ProductList */
+.product-list-container {
+    padding: 20px;
+    background-color: #f8f9fa;
+    color: #333;
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  /* Product List Heading */
+  .product-list-container h1 {
+    font-size: 2rem;
+    text-align: center;
+    color: #282c34;
+    margin-bottom: 20px;
+  }
+  
+  /* Buttons for creating new products */
+  .create-product-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #61dafb;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+  
+  .create-product-btn:hover {
+    background-color: #4ec0e0;
+  }
+  
+  /* List of products */
+  .product-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .product-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+  }
+  
+  /* Buttons inside product items */
+  .product-list li button {
+    padding: 5px 10px;
+    background-color: #61dafb;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  
+  .product-list li button:hover {
+    background-color: #4ec0e0;
+  }
+  
+  /* Ensure Update/Delete buttons are aligned */
+  .product-actions {
+    display: flex;
+    gap: 10px;
+  }
+  
