@@ -27,6 +27,7 @@ const Header = () => {
         {/* <a href="/cart" style={{ margin: '0 15px' }}>
           <Cart /> 
         </a> */}
+        <a to="/order-history" className="nav-link">Order History</a>
         <button className="cart-button" onClick={toggleCartVisibility}>
         <FontAwesomeIcon icon={faShoppingCart}/>
         {/* <span>Cart ({cart.length})</span> */}

@@ -27,7 +27,7 @@ import Header from './components/header';
 import Footer from './components/Footer';
 import About from './components/About';
 import Checkout from './components/Checkout';
-
+import OrderHistory from './components/OrderHistory';
 
 function App() {
   return (
@@ -42,6 +42,7 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
           <Route path='/about' element={<About/>}/>
+          <Route path="/order-history" element={<OrderHistory />} />
           <Route path="/checkout" element={<Checkout />} />
         </Routes>
         <Footer />
