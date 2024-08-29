@@ -126,25 +126,18 @@
 
 
 
-
-
-
-
-
-
-
-
-
 import React, { useState, useEffect } from 'react';
 import ProductService from './ProductService';
 import CreateProduct from './CreateProduct';
 import '../styles/productlist.css';
+import { useCart } from './CartContext';
 
 const ProductList = () => {
   const [products, setProducts] = useState([]);
   const [isCreating, setIsCreating] = useState(false);
   const [isUpdating, setIsUpdating] = useState(false);
   const [currentProduct, setCurrentProduct] = useState(null);
+  const { addToCart } = useCart();
 
   useEffect(() => {
     fetchProducts();
@@ -202,6 +195,10 @@ const ProductList = () => {
     }
   };
 
+  const handleAddToCart = (product) => {
+    addToCart(product);
+  };
+
   return (
     <div className="product-list-container">
       <button className="create-product-btn" onClick={handleCreateProduct}>Create New Product</button>
@@ -214,6 +211,9 @@ const ProductList = () => {
             <div className="product-actions">
               <button onClick={() => handleUpdateProduct(product)}>Update</button>
               <button onClick={() => handleDeleteProduct(product.id)}>Delete</button>
+              <button onClick={() => handleAddToCart(product)}>
+                Add to Cart
+              </button>
             </div>
           </li>
         ))}

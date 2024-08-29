@@ -13,7 +13,17 @@ const updateProduct = async (id, updatedProduct) => {
   const response = await axios.put(`${API_URL}/${id}`, updatedProduct);
   return response.data;
 };
-const deleteProduct = (id) => axios.delete(`${API_URL}/${id}`);
+// const deleteProduct = (id) => axios.delete(`${API_URL}/${id}`);
+const deleteProduct = async (id) => {
+  try {
+    console.log('Deleting product with ID:', id);
+    const response = await axios.delete(`${API_URL}/${id}`);
+    return response.data;
+  } catch (error) {
+    console.error('Error deleting product:', error);
+    throw error;
+  }
+};
 
 export default {
   getProducts,

@@ -13,4 +13,4 @@ const conn = () => {
     }
 }
 
-module.exports = conn 
+export default conn 

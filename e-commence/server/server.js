@@ -23,8 +23,7 @@ import dotenv from 'dotenv';
 import cors from 'cors';
 // import productRoutes from './routes/productRoutes.js'
 import productRoutes  from './routes/productRoutes.js';
-import conn from './config/db.js'; 
-
+import conn from './db/conn.js'
 
 dotenv.config();
 

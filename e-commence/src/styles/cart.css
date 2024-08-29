@@ -1,0 +1,83 @@
+/* The cart modal container */
+.cart-modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100%;
+    background: white;
+    border-left: 1px solid #ddd;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    overflow-y: auto;
+    padding: 20px;
+    transform: translateX(0);
+    transition: transform 0.3s ease;
+  }
+  
+  /* Hide the modal when not visible */
+  .cart-modal.hidden {
+    transform: translateX(100%);
+  }
+  
+  /* Close button styling */
+  .cart-close {
+    background: #f44336;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 16px;
+  }
+  
+  /* Header styling */
+  .cart-modal h2 {
+    margin-top: 0;
+    font-size: 1.5em;
+    color: #333;
+  }
+  
+  /* Cart item list styling */
+  .cart-modal ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .cart-modal li {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+  }
+  
+  /* Cart item text styling */
+  .cart-modal span {
+    color: #333;
+  }
+
+
+  /* Checkout button styling */
+.checkout-btn {
+    background: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 20px;
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .checkout-btn:hover {
+    background: #45a049;
+  }
+  
+  

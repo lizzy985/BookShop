@@ -26,6 +26,8 @@ import Signup from './components/Signup';
 import Header from './components/header';
 import Footer from './components/Footer';
 import About from './components/About';
+import Checkout from './components/Checkout';
+
 
 function App() {
   return (
@@ -40,6 +42,7 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
           <Route path='/about' element={<About/>}/>
+          <Route path="/checkout" element={<Checkout />} />
         </Routes>
         <Footer />
       </div>
